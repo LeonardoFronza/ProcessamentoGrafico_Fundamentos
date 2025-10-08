@@ -1,9 +1,11 @@
 # Projeto de Exercícios — Processamento Gráfico (OpenGL Moderno)
 
 Última atualização: 07/10/2025
+
 Resumo
 ------
 Este repositório centraliza os exercícios das disciplinas de Processamento Gráfico / Fundamentos de Computação Gráfica.
+
 Autores
 -------
 - LEONARDO FRONZA
@@ -11,6 +13,7 @@ Autores
 Objetivo
 --------
 Fornecer um conjunto de exercícios práticos para aprender o pipeline programável (vertex/fragment shaders), criar janelas com GLFW, carregar texturas e trabalhar com transformações (GLM).
+
 Requisitos
 ----------
 - CMake >= 3.11
@@ -33,6 +36,8 @@ if (-not (Test-Path build)) { New-Item -ItemType Directory build }
 Observações:
 - Em sistemas Unix (Linux/macOS) substitua os comandos pelo equivalente `mkdir -p build; cd build; cmake ..; cmake --build .`.
 - Se o gerador CMake pedir escolha de toolchain, use o provedor que preferir (Visual Studio, MinGW, Ninja).
+```
+
 Executando os exercícios
 ------------------------
 Depois de compilar, os executáveis ficam na pasta de build (ou subpastas dependendo do gerador).
@@ -40,17 +45,21 @@ O que esperar:
 - Janela criada via GLFW
 - Shaders compilados (logs aparecem no terminal se houver erro)
 - Controles: ESC fecha a janela
+
 Adicionar um novo exercício
 ---------------------------
 1. Criar o arquivo em `src/ListaN/MeuEx.cpp` (copiar um template, ex.: `HelloTriangle.cpp`).
+
 Trechos úteis no CMake
 ----------------------
 Procure por uma variável `EXERCISES` no `CMakeLists.txt` e adicione entradas como:
+
 Dicas rápidas de desenvolvimento
 -------------------------------
 - Alterar resolução: editar `WIDTH` e `HEIGHT` no exercício.
 - Usar MSAA: ativar `glfwWindowHint(GLFW_SAMPLES, N)` e habilitar `glEnable(GL_MULTISAMPLE)`.
 - Transparência: habilitar blending com `glEnable(GL_BLEND)` e `glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA)`.
+
 Resolução de problemas (rápido)
 -------------------------------
 - Janela não abre / crash
@@ -94,7 +103,6 @@ src/Lista1/    -> Exercícios da Lista 1
 src/Lista2/    -> Exercícios da Lista 2
 CMakeLists.txt -> Configuração do projeto (gera executáveis por exercício)
 ```
-
 Como compilar
 -------------
 Escolha o fluxo conforme seu sistema.
@@ -169,11 +177,4 @@ Resolução de problemas
 | Tela preta / nada desenhado | Shaders falharam ou VBO/VAO incorretos | Conferir logs do shader e atributos/locations |
 | Build falha no Windows | Toolchain ausente | Instalar Visual Studio Build Tools ou MinGW-w64 |
 
-Contribuição
-------------
-- Mantenha cabeçalho com autoria e data nos arquivos fonte.
-- Prefira pull requests pequenas e com explicação clara das mudanças.
-
 ---
-
-
