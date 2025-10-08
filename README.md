@@ -1,4 +1,4 @@
-# Projeto de Exercícios — Processamento Gráfico (OpenGL Moderno)
+# Exercícios — Processamento Gráfico
 
 Última atualização: 07/10/2025
 
