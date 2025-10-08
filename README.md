@@ -174,14 +174,6 @@ Contribuição
 - Mantenha cabeçalho com autoria e data nos arquivos fonte.
 - Prefira pull requests pequenas e com explicação clara das mudanças.
 
-Contato
--------
-Dúvidas: contate o responsável pela disciplina ou o autor listado.
-
-Licença
--------
-Uso educacional; ajuste conforme as regras da sua instituição.
-
 ---
 
 
